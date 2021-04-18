@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
      Netmgr Module configuration XML file
-     Copyright (c) 2013, 2016-2020 Qualcomm Technologies, Inc.
+     Copyright (c) 2013, 2016-2019 Qualcomm Technologies, Inc.
      All Rights Reserved.
      Confidential and Proprietary - Qualcomm Technologies, Inc.
 -->
@@ -293,7 +293,6 @@
       <data name="netdev_budget" type="int"> 9 </data>
       <data name="tc_ul_baserate" type="int"> 0 </data>
       <data name="low_latency_filters" type="int"> 1 </data>
-      <data name="netmgr_listen_ev_proto" type="int"> 1 </data>
 
       <data name="num_modems" type="int"> 2 </data>
       <list name="modems_enabled">
@@ -2273,7 +2272,7 @@
       <data name="pnd_rps_mask" type="int"> 2 </data>
       <data name="vnd_rps_mask" type="int"> 12 </data>
       <data name="netdev_budget" type="int"> 0 </data>
-      <data name="tcp_mtu_probing" type="int"> 1 </data>
+      <data name="tcp_mtu_probing" type="int"> 2 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
       <data name="skip_buffered_qos_modify" type="int"> 1 </data>
 
@@ -2686,7 +2685,6 @@
       <data name="rmnet_perf" type="int"> 3 </data>
       <data name="rmnet_shs" type="int"> 1 </data>
       <data name="netdev_max_backlog" type="int"> 100000 </data>
-
       <data name="disable_tcp_hystart_detect" type="int"> 1 </data>
       <data name="disable_hystart" type="int"> 1 </data>
       <data name="initial_ssthresh" type="int"> 1400 </data>
@@ -2816,7 +2814,7 @@
       <data name="dataformat_agg_dl_size" type="int"> 31668 </data>
       <data name="dataformat_agg_ul_pkt" type="int"> 32 </data>
       <data name="dataformat_agg_ul_size" type="int"> 16384 </data>
-      <data name="dataformat_agg_ul_time" type="int"> 1000000 </data>
+      <data name="dataformat_agg_ul_time" type="int"> 3000000 </data>
       <data name="dataformat_agg_ul_features" type="int"> 1 </data>
       <data name="dataformat_dl_data_aggregation_protocol" type="int"> 9 </data>
       <data name="dataformat_ul_data_aggregation_protocol" type="int"> 9 </data>
@@ -2839,8 +2837,6 @@
       <data name="pnd_rps_mask" type="int"> 2 </data>
       <data name="vnd_rps_mask" type="int"> 125 </data>
       <data name="netdev_budget" type="int"> 0 </data>
-      <data name="debug_netdev_max_backlog" type="int"> 1500 </data>
-
       <data name="low_latency_filters" type="int"> 1 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
       <data name="max_mtu" type="int"> 9216 </data>
@@ -2985,7 +2981,6 @@
       <data name="netdev_budget" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
       <data name="max_mtu" type="int"> 8192 </data>
-      <data name="netmgr_recovery_enabled" type="int"> 1 </data>
       <data name="num_modems" type="int"> 2 </data>
       <list name="modems_enabled">
          <data type="int"> 1 </data> <!-- MODEM_MSM -->
@@ -3098,11 +3093,11 @@
       <data name="single_qmux_ch_conn_id_str" type="string"> rmnet0 </data>
       <data name="single_qmux_ch_name" type="string"> DATA5_CNTL </data>
       <data name="rmnet_data_enabled" type="int"> 1 </data>
-      <data name="dataformat_agg_dl_pkt" type="int"> 63 </data>
-      <data name="dataformat_agg_dl_size" type="int"> 64844 </data>
+      <data name="dataformat_agg_dl_pkt" type="int"> 31 </data>
+      <data name="dataformat_agg_dl_size" type="int"> 31668 </data>
       <data name="dataformat_agg_ul_pkt" type="int"> 32 </data>
       <data name="dataformat_agg_ul_size" type="int"> 16384 </data>
-      <data name="dataformat_agg_ul_time" type="int"> 1000000 </data>
+      <data name="dataformat_agg_ul_time" type="int"> 3000000 </data>
       <data name="dataformat_agg_ul_features" type="int"> 1 </data>
       <data name="dataformat_dl_data_aggregation_protocol" type="int"> 9 </data>
       <data name="dataformat_ul_data_aggregation_protocol" type="int"> 9 </data>
@@ -3112,13 +3107,10 @@
       <data name="rsb" type="int"> 2 </data>
       <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
       <data name="rtm_rmnet_data_enabled" type="int"> 1 </data>
-      <data name="rmnet_offload" type="int"> 1 </data>
+      <data name="rmnet_perf" type="int"> 3 </data>
       <data name="rmnet_shs" type="int"> 1 </data>
       <data name="uplink_priority" type="int"> 1 </data>
-      <data name="iwlan_concurrency" type="int"> 1 </data>
       <data name="netdev_max_backlog" type="int"> 100000 </data>
-      <data name="debug_netdev_max_backlog" type="int"> 1500 </data>
-
       <data name="disable_tcp_hystart_detect" type="int"> 1 </data>
       <data name="disable_hystart" type="int"> 1 </data>
       <data name="initial_ssthresh" type="int"> 1400 </data>
